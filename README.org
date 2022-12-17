@@ -1,0 +1,10 @@
+* Readme
+*CTF WEB SERVER* is a simple python3 http server that may be useful during CTFs.
+- It will serve static files from the directory is executed, but won't show the
+  root directory index if "/" is requested.
+- If a *b* argument is passed over a GET request, the value is expected to be a
+  base64 encoded string and if no other argument is passed the decoded value is
+  printed, otherwise is the *s* parameter is passed it will be the name of the
+  file where the decoded value will be saved.
+- By the default ctf web server will create a downloads directory in the one
+  it's executed.
